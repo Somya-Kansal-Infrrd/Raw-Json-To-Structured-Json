@@ -1,22 +1,22 @@
 [
   {
-    "upload_request_id": "4e815f76-36b9-4e13-a1f2-2e36d1187a0f",
+    "upload_request_id": "6094ffb8-0d66-44ba-9d8b-29fba1398b79",
     "upload_request_status": "PROCESSING_COMPLETED",
-    "document_id": "e9380b4b-b5f8-43b5-baef-c10abd3ac0ef",
-    "document_name": "9414f4b7_94d3_45a5_8103_68f9af23973b_1-1_1.pdf",
+    "document_id": "5197f04a-c7b1-4011-9fe5-fa40d453a53c",
+    "document_name": "24e1b1f6_a7c7_4534_b7c5_e9220ec91e78_1-1_1.pdf",
     "document_file_type": "pdf",
     "document_processing_status": "PROCESSING_COMPLETED",
     "file_uploaded_timestamp": {
-      "$date": "2026-08-12T08:40:16.367000Z"
+      "$date": "2026-08-12T08:40:18.318000Z"
     },
     "document_received_timestamp": {
-      "$date": "2026-08-11T01:37:18.368000Z"
+      "$date": "2026-08-11T01:42:57.584000Z"
     },
     "document_extraction_start_timestamp": {
-      "$date": "2026-08-11T01:38:08.835000Z"
+      "$date": "2026-08-11T01:43:59.214000Z"
     },
     "business_type": "AUTO",
-    "document_type": "INVALID DOCUMENT TYPE AUTO",
+    "document_type": "ID CARD",
     "document_page_count": 1,
     "original_file_page_count": 0,
     "original_file_blank_pages": 0,
@@ -26,27 +26,34 @@
       "business_type": "AUTO",
       "transaction_source": "IMCOVERED",
       "transaction_origin": "IMCOVERED",
-      "account_number": "010261",
+      "account_number": "005702",
       "agency_no": "01",
-      "original_file_name": "9414f4b7-94d3-45a5-8103-68f9af23973b.pdf",
+      "original_file_name": "24e1b1f6-a7c7-4534-b7c5-e9220ec91e78.pdf",
       "doc_received_date": "08/10/2026",
-      "client_id": "1885",
+      "client_id": "1176",
       "transaction_channel": "DataCapture",
-      "transaction_id": "09089164a335755d",
-      "client_name": "Sound Credit Union",
-      "file_uploaded_timestamp": "2026-08-11T01:36:54.872000Z",
+      "transaction_id": "09089164a335a3f9",
+      "client_name": "Canvas Credit Union",
+      "file_uploaded_timestamp": "2026-08-11T01:42:34.924000Z",
       "channel_name": "IMCovered",
-      "email_sender": "ginagalvez07@gmail.com",
+      "email_sender": "jessicamiller99@icloud.com",
       "is_copernicus": "true",
-      "scan_id": "1885",
+      "scan_id": "1176",
       "DocumentDueDate": "2026-08-13T11:59:59Z",
       "DocumentCriticalDate": "2026-08-12T11:59:59Z",
       "BusinessDueDate": "2026-08-13T11:59:59Z",
       "BusinessCriticalDate": "2026-08-12T11:59:59Z",
-      "infrrdFileName": "9414f4b7-94d3-45a5-8103-68f9af23973b.pdf"
+      "infrrdFileName": "24e1b1f6-a7c7-4534-b7c5-e9220ec91e78.pdf"
     },
-    "source_document_url": "https://app.swbcprod.infrrd.cloud/doc/get/ad574ecc-5683-4380-b43c-df53e4b3294f/2026/8/11/4e815f76-36b9-4e13-a1f2-2e36d1187a0f/source/9414f4b7_94d3_45a5_8103_68f9af23973b.pdf",
+    "source_document_url": "https://app.swbcprod.infrrd.cloud/doc/get/ad574ecc-5683-4380-b43c-df53e4b3294f/2026/8/11/6094ffb8-0d66-44ba-9d8b-29fba1398b79/source/24e1b1f6_a7c7_4534_b7c5_e9220ec91e78.pdf",
+    "account_id": null,
     "fields": [
+      {
+        "field_name": "agent_name",
+        "field_value": "FOREMOST",
+        "field_type": "Single Value",
+        "field_data_type": "String"
+      },
       {
         "field_name": "carrier_agent_email",
         "field_value": "",
@@ -60,16 +67,28 @@
         "field_data_type": "String"
       },
       {
+        "field_name": "carrier_agent_phone",
+        "field_value": "-",
+        "field_type": "Single Value",
+        "field_data_type": "String"
+      },
+      {
         "field_name": "carrier_name",
-        "field_value": "USAA",
+        "field_value": "FOREMOST",
         "field_type": "Single Value",
         "field_data_type": "String"
       },
       {
         "field_name": "doc_issue_date",
-        "field_value": "05/23/2026",
+        "field_value": "08/10/2026",
         "field_type": "Single Value",
         "field_data_type": "String"
+      },
+      {
+        "field_name": "insurance_type",
+        "field_value": "Continuous",
+        "field_type": "Object",
+        "field_data_type": "dropdown"
       },
       {
         "field_name": "loan_number",
@@ -78,14 +97,26 @@
         "field_data_type": "String"
       },
       {
+        "field_name": "policy_effective_date",
+        "field_value": "05/01/2026",
+        "field_type": "Single Value",
+        "field_data_type": "String"
+      },
+      {
+        "field_name": "policy_expiration_date",
+        "field_value": "11/01/2026",
+        "field_type": "Single Value",
+        "field_data_type": "String"
+      },
+      {
         "field_name": "policy_holder_address",
-        "field_value": "17621 32ND AVE SE BOTHELL WA 98012",
+        "field_value": "2780 W 149TH AVE BROOMFIELD, CO 80023-9498",
         "field_type": "Split Field",
         "field_data_type": "address"
       },
       {
         "field_name": "policy_holder_address_street_name",
-        "field_value": "32ND AVE SE",
+        "field_value": "W 149TH AVE",
         "field_type": "Single Value",
         "field_data_type": "String"
       },
@@ -97,84 +128,75 @@
       },
       {
         "field_name": "policy_holder_address_city",
-        "field_value": "BOTHELL",
+        "field_value": "BROOMFIELD",
         "field_type": "Single Value",
         "field_data_type": "String"
       },
       {
         "field_name": "policy_holder_name",
-        "field_value": "GLORIA AGUIMATANG ARMAS",
+        "field_value": "JESSICA MILLER",
         "field_type": "Single Value",
         "field_data_type": "String"
       },
       {
         "field_name": "policy_holder_address_state",
-        "field_value": "WA",
+        "field_value": "CO",
         "field_type": "Single Value",
         "field_data_type": "String"
       },
       {
         "field_name": "policy_holder_address_street_address",
-        "field_value": "17621 32ND AVE SE",
+        "field_value": "2780 W 149TH AVE",
         "field_type": "Single Value",
         "field_data_type": "String"
       },
       {
         "field_name": "policy_holder_address_zipcode",
-        "field_value": "98012",
+        "field_value": "80023-9498",
         "field_type": "Single Value",
         "field_data_type": "String"
       },
       {
         "field_name": "policy_number",
-        "field_value": "034259399C7101",
+        "field_value": "A7992442090",
         "field_type": "Single Value",
         "field_data_type": "String"
       },
       {
-        "field_name": "collateral_id",
-        "field_value": "JTM6CRAV7TD005404",
-        "field_type": "Single Value",
-        "field_data_type": "String",
-        "titan_field_name": "* Collateral ID",
-        "titan_field_id": "aeb53a75-8194-425f-9f6c-6f7852277793",
-        "titan_object_id": "f898bbe4-471c-4a64-a71c-acc374574c08"
-      },
-      {
-        "field_name": "collateral_make",
-        "field_value": "TOYOTA",
-        "field_type": "Single Value",
-        "field_data_type": "String",
-        "titan_field_name": "* Collateral Make",
-        "titan_field_id": "c3adf4a0-3302-405f-9844-1c7efb2f4945",
-        "titan_object_id": "f898bbe4-471c-4a64-a71c-acc374574c08"
-      },
-      {
-        "field_name": "collateral_model",
-        "field_value": "RAV4",
-        "field_type": "Single Value",
-        "field_data_type": "String",
-        "titan_field_name": "* Collateral Model",
-        "titan_field_id": "8beb8e5b-387a-4f9a-a54d-923610f55f65",
-        "titan_object_id": "f898bbe4-471c-4a64-a71c-acc374574c08"
-      },
-      {
         "field_name": "collateral_year",
-        "field_value": "2026",
+        "field_value": "2025",
         "field_type": "Single Value",
         "field_data_type": "String",
         "titan_field_name": "* Collateral Year",
         "titan_field_id": "8f5ca6de-6bde-4362-9814-5986ec0dbb8f",
-        "titan_object_id": "f898bbe4-471c-4a64-a71c-acc374574c08"
+        "titan_object_id": "f69d6158-cd0e-443a-99c0-fbe3fc78de07"
       },
       {
-        "field_name": "lienholder_name",
-        "field_value": "SOUND CREDIT UNION",
+        "field_name": "collateral_make",
+        "field_value": "MAZDA",
         "field_type": "Single Value",
         "field_data_type": "String",
-        "titan_field_name": "* Lienholder",
-        "titan_field_id": "370d2611-ca1a-466c-b37b-10ccf938fb35",
-        "titan_object_id": "f898bbe4-471c-4a64-a71c-acc374574c08"
+        "titan_field_name": "* Collateral Make",
+        "titan_field_id": "c3adf4a0-3302-405f-9844-1c7efb2f4945",
+        "titan_object_id": "f69d6158-cd0e-443a-99c0-fbe3fc78de07"
+      },
+      {
+        "field_name": "collateral_id",
+        "field_value": "7MMVAADW9SN132641",
+        "field_type": "Single Value",
+        "field_data_type": "String",
+        "titan_field_name": "* Collateral ID",
+        "titan_field_id": "aeb53a75-8194-425f-9f6c-6f7852277793",
+        "titan_object_id": "f69d6158-cd0e-443a-99c0-fbe3fc78de07"
+      },
+      {
+        "field_name": "collateral_model",
+        "field_value": "CX-50",
+        "field_type": "Single Value",
+        "field_data_type": "String",
+        "titan_field_name": "* Collateral Model",
+        "titan_field_id": "8beb8e5b-387a-4f9a-a54d-923610f55f65",
+        "titan_object_id": "f69d6158-cd0e-443a-99c0-fbe3fc78de07"
       }
     ]
   }

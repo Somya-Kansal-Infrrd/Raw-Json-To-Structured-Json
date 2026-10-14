@@ -16,38 +16,41 @@ pipeline {
         }
 
         stage('Test') {
-    steps {
-        echo 'Starting Flask application...'
+            steps {
+                echo 'Starting Flask application...'
 
-        sh '''
-            nohup jenkins-venv/bin/python app.py > flask.log 2>&1 &
-            APP_PID=$!
+                sh '''
+                    nohup jenkins-venv/bin/python app.py > flask.log 2>&1 &
+                    APP_PID=$!
 
-            sleep 5
+                    sleep 5
 
-            set +e
+                    set +e
 
-            curl -X POST http://127.0.0.1:5000/api/convert \
-                -H "Content-Type: application/json" \
-                --data-binary @input.json
+                    curl --fail --silent --show-error \
+                        -X POST http://127.0.0.1:5000/api/convert \
+                        -H "Content-Type: application/json" \
+                        --data-binary @input.json
 
-            TEST_RESULT=$?
+                    TEST_RESULT=$?
 
-            echo "========== FLASK LOG =========="
-            cat flask.log
-            echo "========== END FLASK LOG =========="
+                    echo "========== FLASK LOG =========="
+                    cat flask.log
+                    echo "========== END FLASK LOG =========="
 
-            kill $APP_PID 2>/dev/null || true
+                    kill $APP_PID 2>/dev/null || true
 
-            exit $TEST_RESULT
-        '''
-    }
-}
+                    exit $TEST_RESULT
+                '''
+            }
+        }
 
         stage('Deploy') {
             steps {
                 echo 'Deploying application...'
                 echo 'Deployment successful!'
+
+                archiveArtifacts artifacts: 'output.json', fingerprint: true
             }
         }
     }

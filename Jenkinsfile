@@ -5,10 +5,10 @@ pipeline {
 
         stage('Build') {
             steps {
-                echo 'Building Raw JSON to Structured JSON...'
-                sh 'python3 --version'
-            }
-        }
+                echo 'Installing dependencies...'
+                sh 'python3 -m pip install -r requirements.txt'
+    }
+}
 
         stage('Test') {
             steps {

@@ -5,15 +5,19 @@ pipeline {
 
         stage('Build') {
             steps {
-                echo 'Installing dependencies...'
-                sh 'python3 -m pip install -r requirements.txt'
-    }
-}
+                echo 'Creating Python virtual environment...'
+                sh '''
+                    python3 -m venv jenkins-venv
+                    jenkins-venv/bin/python -m pip install --upgrade pip
+                    jenkins-venv/bin/python -m pip install -r requirements.txt
+                '''
+            }
+        }
 
         stage('Test') {
             steps {
                 echo 'Running application...'
-                sh 'python3 app.py'
+                sh 'jenkins-venv/bin/python app.py'
             }
         }
 
